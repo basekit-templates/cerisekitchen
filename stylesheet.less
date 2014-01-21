@@ -20,7 +20,7 @@ body {
         position: relative;
         max-width: 100%;
         min-height: 40px;
-        background-color: fade(@color-swatch5, 5%);
+        background-color: fade(@color-swatch4, 10%);
         @media @tablet {
             background-color: transparent;
         }
@@ -177,33 +177,33 @@ body {
                @media @tablet {
                    display: block;
                    position: absolute;
-                   width: auto;
-                   height: auto;
-                   top: -3px;
-                   right: 50%;
+                   margin: 0 auto;
+                   width: 100%;
+                   top: 0;
                    &:hover {
                        cursor: pointer;
                    }
                    &:after {
-                        content:"";
-                        background: image('/images/nav-icon.png') no-repeat;
-                        background-position: center;
+                        content:"↓";
+                        color: @color-swatch1;
+                        font-size: 1.3em;
+                        text-align: center;
                         width: 81px;
                         height: 38px;
                         top: 0;
                         right: 0;
-                        left: -30px;
+                        left: 0;
                         margin: 0 auto;
-                        background-color: #D3C7CA;
+                        background-color: lighten(@color-swatch3,10%);
                         display: inline-block;
                         position: absolute;
                         border: none;
                         -webkit-border-radius: 0 0 50px 50px;
                         -moz-border-radius: 0 0 50px 50px;
                         border-radius: 0 0 50px 50px;
-                        -webkit-box-shadow: 0px 3px 0px #AD9AA1;
-                        -moz-box-shadow:    0px 3px 0px #AD9AA1;
-                        box-shadow:         0px 3px 0px #AD9AA1;
+                        -webkit-box-shadow: 0px 3px 0px darken(@color-swatch3,20%);
+                        -moz-box-shadow:    0px 3px 0px darken(@color-swatch3,20%);
+                        box-shadow:         0px 3px 0px darken(@color-swatch3,20%);
                    }
                }
            }
