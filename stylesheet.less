@@ -452,9 +452,10 @@ header {
 
                 .menu-items {
                     -moz-column-count: 3;
-                    -moz-column-gap: 5em;
+                    -moz-column-gap: 2.2em;
                     -webkit-column-count: 3;
-                    -webkit-column-gap : 5em;
+                    -webkit-column-gap : 2.2em;
+
                     @media only screen and (max-width: 850px) {
                         -moz-column-count: 2;
                         -moz-column-gap: 50px;
@@ -590,6 +591,7 @@ header {
                                     color: @color-swatch3;
                                     float: left;
                                     margin-right: 5px;
+                                    margin-bottom: 5px;
                                 }
                                 .vegetarian-icon {
                                     &:before { 
@@ -663,6 +665,14 @@ header {
                                     top: -1px;
                             }
                         }
+                    }
+                    .menu-items {
+                        li {
+                            &.menu-item-promoted {
+                                background-color: rgba(255, 255, 255, 0.4);
+                            }
+                        }
+                        
                     }
                 } /* end PROMOTED SUB-SECTION */
 
