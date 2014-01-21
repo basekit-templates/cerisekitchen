@@ -5,6 +5,11 @@ body {
   background-image:image('/images/ricepaper2.png');
 }
 
+.bk-pt-default .main {
+    border-top: 1px solid @color-swatch3;
+    margin-top: 2em;
+}
+
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
@@ -250,6 +255,9 @@ header {
         text-align: center;
         width: 60%;
         margin: 0 auto;
+        @media only screen and (max-width: 850px) {
+            width:80%;
+        }
         @media @mobile {
             width: 100%;
         }
@@ -747,6 +755,7 @@ footer .widget.profile .bk-profile-socialicons {
 hr {
     &.line {
         background-color: @color-swatch3;
+        height: 1px;
     }
 }
 
