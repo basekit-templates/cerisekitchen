@@ -402,10 +402,7 @@ header {
 
 .widget {
     &.menu {
-        background-color: fade(@color-swatch1,50%);
         .main {
-            width: 90%;
-            margin: 0 5%;
             padding: 0;
             background-image: image('/images/brown-circle.png');
             background-repeat: repeat-x;
@@ -432,10 +429,11 @@ header {
 
             /* SECTION AND SUB-SECTION HEADERS */
                 .menu-header {
+                    border-top: 1px dotted @color-swatch3;
                 }
 
                 .menu-header, .menu-subsection-header {
-                    margin: 2em 0;
+                    margin: 1em 0 2em;
                     border-bottom: 1px dotted @color-swatch3;
                     padding: 1em 0;
                     text-align: center;
