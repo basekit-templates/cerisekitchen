@@ -384,6 +384,7 @@ header {
                 margin: 0;
                 &:last-child {
                     border-bottom:none;
+                    padding-right: 0;
                 }
                 a {
                     display: block;
@@ -482,21 +483,19 @@ header {
                         position: relative;
                         display: block;
                         text-align: left;
-                        padding: 2em 0;
+                        padding: 0;
                         margin-bottom: 0;
-                        border-bottom: 1px dotted darken(@color-swatch7,20%);
                         @media @mobile { 
                             margin-bottom: 1.5em;
                             padding-bottom: 1.5em;
                         }
                         &.menu-item-promoted { /* menu-item-promoted */
                                 background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1); 
-                                border: none;
-                                -webkit-border-radius: 5px;
-                                -moz-border-radius: 5px;
-                                border-radius: 5px;
+                                border: 1px dotted darken(@color-swatch7,20%);
                                 padding: 1em;
                                 .inner-item {
+                                    border-bottom: none;
+                                    padding: 0;
                                     h3 {
                                         width: auto;
                                         padding: 0 0 0 30px;
@@ -514,13 +513,19 @@ header {
 
                         .inner-item {
                             display: inline-block;
+                            border-bottom: 1px dotted darken(@color-swatch7,20%);
+                            padding: 2em 0;
                             h3 { /* menu-item-name */  
                                 padding: 0;
                             }
                             .menu-item-image-wrap {
-                                .bg-cover!important;
-                                background-repeat: no-repeat!important;
+                                .bg-cover;
+                                background-repeat: no-repeat;
                                 height: 200px;
+                                background-position: center;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
                                 img {
                                     display: none;
                                 }
@@ -672,7 +677,7 @@ header {
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                     padding: 0 2em 0;
-                    margin-bottom: 5em;
+                    margin-bottom: 0;
                     position: relative;
                     background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
                     border: none;
