@@ -438,18 +438,18 @@ header {
             /* SECTION AND SUB-SECTION HEADERS */
                 .menu-header {
                     border-top: 1px dotted @color-swatch3;
+                    padding: 1em 0;
                 }
 
                 .menu-header, .menu-subsection-header {
-                    margin: 1em 0 2em;
+                    margin: 0;
                     border-bottom: 1px dotted @color-swatch3;
-                    padding: 1em 0;
                     text-align: center;
                     h1 { /* menu-name */
                         padding: 0;
                     }
                     h2 { /* MENU-SUBSECTION-HEADER */
-                        padding-top: 3px;
+                        padding-top: 1.5em;
                     }
                     p { /* description */
                         padding: 5px 0; 
@@ -678,10 +678,9 @@ header {
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                     padding: 0 2em 0;
-                    margin-bottom: 2em;
+                    margin-bottom: 0em;
                     position: relative;
                     background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
-                    border: 1px dotted darken(@color-swatch7,20%);
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     -moz-border-radius: 15px;
@@ -693,7 +692,6 @@ header {
                         h2 { /* menu-section-name */
                             color: @color-swatch3;
                             background-image: none;
-                            padding-top: 0;
                             &:before, &:after {
                                     content: "\2605";
                                     display: inline-block;
@@ -725,7 +723,7 @@ header {
                     p { /* menu-note */
                       float: left;
                       width: 100%;
-                      padding: 0;
+                      padding: 2em 0;
                       color: @color-swatch3;
                     }
 
