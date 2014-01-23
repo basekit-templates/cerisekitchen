@@ -485,7 +485,12 @@ header {
                         -moz-column-count: 1;
                         column-count: 1;
                     }
-                    
+                    @media only screen and (max-width: 550px) {
+                       -moz-column-count: 1;
+                       -moz-column-gap: 50px;
+                       -webkit-column-count: 1;
+                       -webkit-column-gap : 50px;
+                    }
                     li { /* menu-item */
                         position: relative;
                         display: block;
