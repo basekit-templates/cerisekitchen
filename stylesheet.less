@@ -5,6 +5,13 @@ body {
   background-image:image('/images/ricepaper2.png');
 }
 
+.bg-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .bk-pt-default .main {
     border-top: 1px solid @color-swatch3;
     margin-top: 2em;
@@ -510,13 +517,13 @@ header {
                             h3 { /* menu-item-name */  
                                 padding: 0;
                             }
-                            img { /* menu-item-image */
-                                border: none;
-                                -webkit-border-radius: 5px;
-                                -moz-border-radius: 5px;
-                                border-radius: 5px;
-                                width: 100%;
-                                margin: 8px 0;
+                            .menu-item-image-wrap {
+                                .bg-cover!important;
+                                background-repeat: no-repeat!important;
+                                height: 200px;
+                                img {
+                                    display: none;
+                                }
                             }
                             li {
                                 border-bottom: 0;
@@ -706,7 +713,7 @@ header {
                     display: inline-block;
                     width: 100%;
                     text-align: center;
-                    margin: 2em 0;
+                    margin: 0;
                     p { /* menu-note */
                       float: left;
                       width: 100%;
