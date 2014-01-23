@@ -493,6 +493,7 @@ header {
                                 background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1); 
                                 border: 1px dotted darken(@color-swatch7,20%);
                                 padding: 1em;
+                                display: inline-block;
                                 .inner-item {
                                     border-bottom: none;
                                     padding: 0;
@@ -587,7 +588,7 @@ header {
                             .menu-section-item-dietary-props {
                                 float: left;
                                 width: 100%;
-                                margin-top: 10px;
+                                margin-top: 0px;
                                 padding: 0;
                                .dietary-icon {
                                     background-color: @color-swatch1;
@@ -643,21 +644,21 @@ header {
 
                                 .spicy-icon {
                                     &:before { 
-                                    content: "spicy";
+                                    content: "mild";
                                     padding: 7px;
                                     }
                                   }
 
                                 .medium-spicy-icon {
                                     &:before { 
-                                    content: "medium spicy";
+                                    content: "medium";
                                     padding: 7px;
                                     }
                                   }
 
                                 .hot-icon {
                                     &:before { 
-                                    content: "hot spicy";
+                                    content: "hot";
                                     padding: 7px;
                                     }
                                   }
@@ -677,10 +678,10 @@ header {
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                     padding: 0 2em 0;
-                    margin-bottom: 0;
+                    margin-bottom: 2em;
                     position: relative;
                     background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
-                    border: none;
+                    border: 1px dotted darken(@color-swatch7,20%);
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     -moz-border-radius: 15px;
@@ -692,7 +693,7 @@ header {
                         h2 { /* menu-section-name */
                             color: @color-swatch3;
                             background-image: none;
-                            padding-top: 1.5em;
+                            padding-top: 0;
                             &:before, &:after {
                                     content: "\2605";
                                     display: inline-block;
