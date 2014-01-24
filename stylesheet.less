@@ -412,10 +412,6 @@ header {
     &.menu {
         .main {
             padding: 0;
-            background-image: image('/images/brown-circle.png');
-            background-repeat: repeat-x;
-            background-size: 10px;
-            background-position: bottom;
             margin-bottom: 40px;
             border-top: 0;
             display: none;
@@ -500,19 +496,20 @@ header {
                             -webkit-column-count: 1;
                             -moz-column-count: 1;
                             column-count: 1;
+                            li {
+                                &.menu-item-promoted { 
+                                    display: block;
+                                }
+                            }
                         }
                     }
-                    
+
                     li { /* menu-item */
                         position: relative;
                         display: block;
                         text-align: left;
                         padding: 0;
                         margin-bottom: 0;
-                        @media @mobile { 
-                            margin-bottom: 1.5em;
-                            padding-bottom: 1.5em;
-                        }
                         &.menu-item-promoted { /* menu-item-promoted */
                                 background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1); 
                                 border: 1px dotted darken(@color-swatch7,20%);
