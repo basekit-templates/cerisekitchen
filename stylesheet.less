@@ -340,8 +340,15 @@ header {
         @media @tablet {
             margin-top: 1.5em;
         }
+        @media only screen and (max-width: 550px) {
+            padding:0;
+            margin-top:0;
+            padding: 0 0 0;
+        }
         ul {
-            display: inline-block;
+            display: table;
+            width: 100%;
+            margin: 0 auto;
             list-style: none;
             padding: 0;
             /* ALIGN CENTER */
@@ -378,13 +385,16 @@ header {
                 }
             }
             li {
-                float: left;
-                display: block;
-                padding-right: 15px;
+                display: inline-block;
+                padding: 0 15px 10px 0;
                 margin: 0;
                 &:last-child {
-                    border-bottom:none;
                     padding-right: 0;
+                }
+                @media only screen and (max-width: 550px) {
+                    width: 100%;
+                    border-top: 1px dotted @color-swatch3;
+                    padding: 15px 0 10px 0;
                 }
                 a {
                     display: block;
@@ -417,6 +427,9 @@ header {
             display: none;
             &.selected {
                 display: block;
+                width: 100%;
+                margin: 0 auto;
+                float: left;
             }
             @media only screen and (max-width: 850px) {
                 width: 100%;
@@ -514,6 +527,7 @@ header {
                                 background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1); 
                                 border: 1px dotted darken(@color-swatch7,20%);
                                 padding: 1em;
+                                margin-top: 1em;
                                 display: inline-block;
                                 .inner-item {
                                     border-bottom: none;
@@ -641,19 +655,19 @@ header {
                                     padding: 7px;
                                     }
                                 }
-                                .glutenFree-icon {
+                                .glutenfree-icon {
                                     &:before { 
                                     content: "gf";
                                     padding: 7px;
                                     }
                                 }
-                                .nutFree-icon {
+                                .nutfree-icon {
                                     &:before { 
                                     content: "nf";
                                     padding: 7px;
                                     }
                                   }
-                                .dairyFree-icon {
+                                .dairyfree-icon {
                                     &:before { 
                                     content: "df";
                                     padding: 7px;
