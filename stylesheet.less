@@ -250,6 +250,11 @@ body {
     }
 }
 
+.widget .extendednavigation ul li.folder:after {
+    display: none;
+}
+
+
 /* ===============================
    HEADER
    =============================== */
@@ -799,11 +804,27 @@ header {
   CONTACT FORM
    =============================== */
 
+    .widget.contactform fieldset input, .widget.contactform fieldset textarea {
+        border: 1px solid darken(@color-swatch1,10%);
+    }
+
    .contactform fieldset {
         border: none;
-        margin: 0 0 10px;
+        margin: 4px 0 13px;
         padding: 0;
     }
+
+/* ===============================
+  SIGN UP FORM
+   =============================== */
+
+   .widget.signupform fieldset input {
+        border: 1px solid darken(@color-swatch1,10%);
+    }
+    .signupform fieldset button {
+        padding: 10px;
+    }
+
 
 /* ===============================
   TWITTER
@@ -860,10 +881,19 @@ header {
 .blog-post-metadata {
     background-color: transparent;
     margin-top: 0;
+    text-align: left;
+}
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
 }
 
 .blog-post-item {
-    border-bottom: 1px dotted @color-swatch5;
     margin: 1.5em 0;
     padding-bottom: 1em;
     h2 {
