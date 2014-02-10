@@ -822,7 +822,7 @@ header {
         border: 1px solid darken(@color-swatch1,10%);
     }
     .signupform fieldset button {
-        padding: 10px;
+        padding: 8px 10px 12px;
     }
 
 
@@ -860,16 +860,38 @@ header {
 }
 .widget {
     &.responsiveslideshow {
+        background-color: @color-swatch7;
+        .image-wrapper {
+            padding: 20px;
+        }   
         .content-wrapper {
-            background-color: @color-swatch3;
+            background-color: @color-swatch7;
+            text-align: center;
         }
         .title {
             display: inline-block;
             padding:10px 15px 0 15px;
+            text-align: center;
+            font-family:@font-swatch3-font-family;
+            font-size:@font-swatch3-font-size;
+            font-weight:@font-swatch3-font-weight;
+            line-height:@font-swatch3-line-height;
+            color:@font-swatch3-color;
+            letter-spacing: @font-swatch3-letter-spacing;
         }
         .description {
             display: block;
             padding: 0 15px 15px;
+            text-align: center;
+            font-family:@font-swatch5-font-family;
+            font-size:@font-swatch5-font-size;
+            font-weight:@font-swatch5-font-weight;
+            line-height:@font-swatch5-line-height;
+            color:@font-swatch5-color;
+            letter-spacing: @font-swatch5-letter-spacing;
+        }
+        .slideshow-widget-controls .dot.selected {
+            background-color: @color-swatch5;
         }
     }
 }
