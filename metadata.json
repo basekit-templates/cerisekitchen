@@ -111,7 +111,7 @@
         "font7": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
-            "font-weight": "300",
+            "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
