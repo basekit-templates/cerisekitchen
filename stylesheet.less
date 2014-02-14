@@ -678,6 +678,9 @@ body {
                                     margin-bottom: 5px;
                                     padding: 0 7px;
                                 }
+                                .not-spicy-icon {
+                                    display: none;
+                                }
                             } /* end menu-section-item-dietary-props */   
 
 
@@ -845,10 +848,20 @@ body {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+            left: 45%;
+            top: 43%;
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
                 top: 2px;
+            }
+            @media @mobile {
+                width: 40px;
+                height: 40px;
+                &:after {
+                    font-size: 15px;
+                    line-height: 36px;
+                }
             }
         }
     }
@@ -866,6 +879,28 @@ body {
         }
     }
 }
+
+/* ===============================
+  IMAGE WIDGET
+   =============================== */
+
+.widget.image {
+    .image-title, .image-description {
+    color: @font-swatch5-color;
+    }
+}
+
+/* ===============================
+   BLOCK QUOTE
+  =============================== */
+
+  blockquote {
+    background-color: transparent;
+    margin: 20px;
+    &:before {
+        color: @color-swatch3;
+    }
+  }
 
 
 /* ===============================
